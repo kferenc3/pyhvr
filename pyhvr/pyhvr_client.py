@@ -17,7 +17,7 @@ class Client:
     bearer_token: str = None
     bearer_token_valid_until: int = 0
     setup_mode: bool = False
-    verify: Union[bool|str] = True
+    verify: Union[bool, str] = True
 
     def __init__(self, uri, setup_mode, username=None, password=None, verify=True):
         self.username = username
